@@ -7,8 +7,8 @@ module TLatch (
         if (en) begin
             if (T)
                 Q = ~Q;  // Toggle
-            else
-                Q = Q;   // Hold
+            // else: Q stays same, do nothing
         end
+        // if en is 0, do nothing — Q remains same
     end
 endmodule
