@@ -10,6 +10,6 @@ module SRLatch (
             Q = 0;
         else if (~S && ~R)
             Q = Q; // Hold
-        // S=1 and R=1 is invalid: do nothing here (or could handle separately)
+        // S=1 and R=1 is invalid: do nothing here
     end
 endmodule
